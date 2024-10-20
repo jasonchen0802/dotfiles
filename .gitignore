@@ -1,0 +1,7 @@
+# bare repository
+.dotfiles/
+
+cache/
+
+local/
+

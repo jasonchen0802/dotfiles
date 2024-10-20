@@ -6,6 +6,8 @@
 
 source $ZPLUGIN/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+source $ZPLUGIN/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # +---------+
 # | OPTIONS |
 # +---------+

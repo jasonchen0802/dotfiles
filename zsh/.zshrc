@@ -8,6 +8,9 @@ source $ZPLUGIN/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source $ZPLUGIN/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# It must be sourced before binding.zsh and after the zsh-syntax-highlighting plugin
+source $ZPLUGIN/zsh-history-substring-search/zsh-history-substring-search.zsh
+
 # +---------+
 # | OPTIONS |
 # +---------+

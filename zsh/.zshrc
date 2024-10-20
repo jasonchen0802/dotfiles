@@ -1,6 +1,12 @@
 #!/usr/bin/env zsh
 
 # +---------+
+# | PLUGINS |
+# +---------+
+
+source $ZPLUGIN/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# +---------+
 # | OPTIONS |
 # +---------+
 

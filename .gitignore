@@ -5,6 +5,8 @@ cache/
 
 local/
 
+git/.gitconfig
+
 bash/.bash_history
 
 zsh/.zsh_history

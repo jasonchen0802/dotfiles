@@ -11,6 +11,8 @@ source $ZPLUGIN/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # It must be sourced before binding.zsh and after the zsh-syntax-highlighting plugin
 source $ZPLUGIN/zsh-history-substring-search/zsh-history-substring-search.zsh
 
+source $ZPLUGIN/zsh-you-should-use/you-should-use.plugin.zsh
+
 # +---------+
 # | OPTIONS |
 # +---------+

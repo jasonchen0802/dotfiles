@@ -12,10 +12,10 @@ This repository is suitable for Debian-based environments.
 
 ```bash
 sudo apt update && sudo apt dist-upgrade -y && \
-sudo apt install git zsh neovim
+sudo apt install git zsh neovim bat
 ```
 
-- Add a new SSH key to GitHub accout, check the [tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=linux&tool=webui)
+- Add a new SSH key to GitHub account, check the [tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=linux&tool=webui)
 
 - Clone this repository
 

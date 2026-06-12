@@ -3,9 +3,6 @@
 # Define the alias for git bare repository
 alias dotfile="/usr/bin/git --git-dir=$HOME/.config/.dotfiles/ --work-tree=$HOME/.config"
 
-# CLone this repository via SSH
-git clone --bare git@github.com:jasonchen0802/dotfiles.git $HOME/.config/.dotfiles
-
 # Checkout the actual content from the bare repository
 dotfile checkout
 

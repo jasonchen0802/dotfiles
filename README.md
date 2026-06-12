@@ -26,8 +26,6 @@ git clone --bare git@github.com:jasonchen0802/dotfiles.git $HOME/.config/.dotfil
 
 ### Installation
 
-I've written the following steps except "remove old dotfiles" into a shell script, just execute `install.sh`.
-
 - Define the alias
 
 ```bash

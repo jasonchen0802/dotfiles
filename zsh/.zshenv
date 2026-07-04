@@ -51,7 +51,14 @@ export SAVEHIST=1000
 # | Path |
 # +------+
 
-export PATH="$XDG_CONFIG_HOME/local/bin:/usr/local/bin:/usr/bin:$PATH"
+typeset -U path
+
+path=(
+  "$HOME/.local/bin"
+  $path
+)
+
+export PATH
 
 # +-----+
 # | Git |
@@ -64,7 +71,7 @@ export GIT_CONFIG_GLOBAL="$XDG_CONFIG_HOME/git/.gitconfig"
 # +------+
 
 export PIPX_HOME="$XDG_DATA_HOME/pipx"
-export PIPX_BIN_DIR="$XDG_CONFIG_HOME/local/bin"
+export PIPX_BIN_DIR="$HOME/.local/bin"
 
 # +---------+
 # | Ansible |

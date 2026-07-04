@@ -43,6 +43,7 @@ export VISUAL="nvim"
 
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export ZPLUGIN="$ZDOTDIR/plugins"
+export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/.zcompdump"
 export HISTFILE="$XDG_STATE_HOME/shell/.zsh_history"
 export HISTSIZE=1000
 export SAVEHIST=1000

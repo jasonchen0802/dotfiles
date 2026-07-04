@@ -19,7 +19,7 @@
 # | Locale |
 # +--------+
 
-export LANG=zh_TW.UTF-8
+export LANG=en_US.UTF-8
 
 # +-----+
 # | XDG |

@@ -43,7 +43,7 @@ export VISUAL="nvim"
 
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export ZPLUGIN="$ZDOTDIR/plugins"
-export HISTFILE="$ZDOTDIR/.zsh_history"
+export HISTFILE="$XDG_STATE_HOME/shell/.zsh_history"
 export HISTSIZE=1000
 export SAVEHIST=1000
 
@@ -83,7 +83,7 @@ export ANSIBLE_HOME="$XDG_DATA_HOME/ansible"
 # | Less |
 # +------+
 
-export LESSHISTFILE="$XDG_CONFIG_HOME/less/.lesshst"
+export LESSHISTFILE="$XDG_STATE_HOME/less/.lesshst"
 
 # +------+
 # | Bash |

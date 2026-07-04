@@ -8,6 +8,10 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+export XDG_STATE_HOME="${XDG_STATE_HOME:-$HOME/.local/state}"
+
+export HISTFILE="$XDG_STATE_HOME/shell/.bash_history"
+
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists

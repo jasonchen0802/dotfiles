@@ -1,0 +1,8 @@
+[user]
+	jason = Jason Chen
+
+[init]
+    defaultBranch = main
+
+[include]
+    path = ~/.config/git/.gitconfig.local

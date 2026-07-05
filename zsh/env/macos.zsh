@@ -13,7 +13,7 @@ export LANG=zh_TW.UTF-8
 typeset -U path
 
 path=(
-  "$HOME/.config/local/bin"
+  "$HOME/.local/bin"
   "/opt/homebrew/bin"
   "/opt/homebrew/sbin"
   $path

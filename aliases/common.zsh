@@ -1,13 +1,5 @@
 #!/usr/bin/env zsh
 
-# +--------+
-# | System |
-# +--------+
-
-alias shutdown="sudo shutdown now"
-alias restart="sudo reboot"
-alias update="sudo apt update && sudo apt dist-upgrade"
-
 # +----+
 # | ls |
 # +----+
@@ -64,9 +56,3 @@ alias dcp="docker compose pull"
 alias dcu="docker compose up -d"
 alias dcd="docker compose down"
 alias dcdu="docker compose down && docker compose up -d"
-
-# +-----+
-# | Bat |
-# +-----+
-
-alias cat="batcat"

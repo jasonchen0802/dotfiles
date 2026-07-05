@@ -41,4 +41,13 @@ source $ZDOTDIR/binding.zsh
 # | ALIASES |
 # +---------+
 
-source $XDG_CONFIG_HOME/aliases/aliases
+source $XDG_CONFIG_HOME/aliases/common.zsh
+
+case "$(uname -s)" in
+    Linux)
+        source "$XDG_CONFIG_HOME/aliases/debian.zsh"
+        ;;
+    Darwin)
+        source "$XDG_CONFIG_HOME/aliases/macos.zsh"
+        ;;
+esac

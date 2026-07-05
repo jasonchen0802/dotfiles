@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-
 #  _____                                                              _____ 
 # ( ___ )------------------------------------------------------------( ___ )
 #  |   |                                                              |   | 
@@ -14,12 +13,6 @@
 #  |___|                                                              |___| 
 # (_____)------------------------------------------------------------(_____)
 
-
-# +--------+
-# | Locale |
-# +--------+
-
-export LANG=en_US.UTF-8
 
 # +-----+
 # | XDG |
@@ -48,18 +41,14 @@ export HISTFILE="$XDG_STATE_HOME/shell/.zsh_history"
 export HISTSIZE=1000
 export SAVEHIST=1000
 
-# +------+
-# | Path |
-# +------+
-
-typeset -U path
-
-path=(
-  "$HOME/.local/bin"
-  $path
-)
-
-export PATH
+case "$(uname -s)" in
+    Linux)
+        source "$ZDOTDIR/env/debian.zsh"
+        ;;
+    Darwin)
+        source "$ZDOTDIR/env/macos.zsh"
+        ;;
+esac
 
 # +-----+
 # | Git |
@@ -91,4 +80,3 @@ export LESSHISTFILE="$XDG_STATE_HOME/less/.lesshst"
 # +------+
 
 export BASH_ENV="$XDG_CONFIG_HOME/bash/.bashrc"
-

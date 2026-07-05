@@ -38,6 +38,7 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export ZPLUGIN="$ZDOTDIR/plugins"
 export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/.zcompdump"
 export HISTFILE="$XDG_STATE_HOME/shell/.zsh_history"
+mkdir -p $XDG_STATE_HOME/shell
 export HISTSIZE=1000
 export SAVEHIST=1000
 
@@ -73,7 +74,8 @@ export ANSIBLE_HOME="$XDG_DATA_HOME/ansible"
 # | Less |
 # +------+
 
-export LESSHISTFILE="$XDG_STATE_HOME/less/.lesshst"
+export LESSHISTFILE="$XDG_STATE_HOME/less/.less_history"
+mkdir -p $XDG_STATE_HOME/less
 
 # +------+
 # | Bash |

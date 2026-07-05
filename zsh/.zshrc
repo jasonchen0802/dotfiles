@@ -51,3 +51,5 @@ case "$(uname -s)" in
         source "$XDG_CONFIG_HOME/aliases/macos.zsh"
         ;;
 esac
+
+export HISTFILE="$XDG_STATE_HOME/shell/.zsh_history"

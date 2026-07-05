@@ -4,7 +4,7 @@
 # | Git |
 # +-----+
 
-#dotfiles' bare repository
+# dotfiles' bare repository
 alias dotfile="/opt/homebrew/bin/git --git-dir=$XDG_CONFIG_HOME/.dotfiles/ --work-tree=$XDG_CONFIG_HOME"
 
 # +-----+

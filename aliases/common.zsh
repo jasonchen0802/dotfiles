@@ -10,7 +10,8 @@ alias l="ls -lah --color=auto"
 # | wget |
 # +------+
 
-alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+alias wget=wget --hsts-file="$XDG_STATE_HOME/wget/.wget_history"
+mkdir -p $XDG_STATE_HOME/wget
 
 # +--------+
 # | Neovim |

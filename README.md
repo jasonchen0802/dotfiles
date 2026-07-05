@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository is suitable for Debian-based environments.
+This repository is suitable for Debian-based and macOS (Apple Silicon) environments.
 
 ## Getting Started
 
@@ -11,8 +11,15 @@ This repository is suitable for Debian-based environments.
 - Install required package
 
 ```bash
+# Debian
 sudo apt update && sudo apt dist-upgrade -y && \
-sudo apt install git zsh neovim bat
+sudo apt install git zsh neovim bat glow
+```
+
+```bash
+# macOS
+brew update && brew upgrade && \
+brew install git zsh neovim bat glow
 ```
 
 - Add a new SSH key to GitHub account, check the [tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=linux&tool=webui)
@@ -29,7 +36,13 @@ git clone --bare git@github.com:jasonchen0802/dotfiles.git $HOME/.config/.dotfil
 - Define the alias
 
 ```bash
+# Debian
 alias dotfile="/usr/bin/git --git-dir=$HOME/.config/.dotfiles/ --work-tree=$HOME/.config"
+```
+
+```bash
+# macOS
+alias dotfile="/opt/homebrew/bin/git --git-dir=$HOME/.config/.dotfiles/ --work-tree=$HOME/.config"
 ```
 
 - Checkout the actual content from the bare repository
